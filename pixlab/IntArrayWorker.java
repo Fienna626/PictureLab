@@ -114,15 +114,15 @@ public class IntArrayWorker
     }
     return count;
 }
-    public int getLargest(int n)
+    public int getLargest()
     {
         int max = 0; 
         for (int[] i: matrix)
         {
             for (int j: i)
             {
-                if (max < n)
-                max = n;
+                if (max < j)
+                max = j;
             }
         }
         return max;
